@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: solid 1px rgb(59, 160, 219);
+    width: 99vw;
+    margin: 2px;
+}
