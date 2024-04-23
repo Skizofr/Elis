@@ -15,7 +15,7 @@ export const Form = () =>{
 <br></br>
             <div className={styles.formGroup}>
                 <label className={styles.subTitle} htmlFor="phone">Contact number</label>
-                <input placeholder="Number" className={styles.formStyle} type="Number"/>
+                <input placeholder="(Optional)" className={styles.formStyle} type="Number"/>
             </div>
 <br></br>
             <div className={styles.formGroup}>

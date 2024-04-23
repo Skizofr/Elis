@@ -1,11 +1,111 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .container{
-    border: solid 1px rgb(59, 160, 219);
-    width: 99vw;
-    margin: 2px;
+    /* border: solid 1px rgb(59, 160, 219); */
+    width: 100vw;
+    height: 10vh;
+    margin-bottom: 10%;
+    position: relative;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 6%;
+    border-radius: 40px;
+    
+
+}
+
+ul{
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    /* overflow: hidden; */
+}
+
+
+.link{
+    width: 100%;
+    text-align: center;
+    /* font-weight: ; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container ul li{
+    list-style: none;
+    position: relative;
+    z-index: 2;
+}
+
+.icon{
+    position: relative;
+    display: block;
+    line-height: 20px;
+    font-size: 1.5em;
+    transition: 0.5s;
+    color: black;
+}
+
+.text{
+    max-width: 99vw;
+    position: absolute;
+    background: blue;
+    color: aliceblue;
+    padding: 2px 7px;
+    border-radius: 12px;
+    transition: 0.5s;
+    opacity: 1;
+    transform: translateY(27px);
+}
+.container ul li.abt .link .icon{
+    transform: translateY(0px);
+    color: red;
+}
+
+.container ul li.abt .link .text{
+    transform: translateY(45px);
+    opacity: 1;
+}
+
+.indicator{
+    
+    position:absolute;
+    bottom: -23px;
+    transform: translateX(-27.3px);
+    width: 19%;
+    height: 80%;
+    background: beige;
+    border-radius: 20px 0px 70px 70px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.indicator::before{
+    content:'';
+    position: absolute;
+    bottom: 6px;
+    left: 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -15px -18px beige;
+}
+.indicator::after{
+    content:'';
+    position: absolute;
+    bottom: 6px;
+    right: 7px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: 15px -18px beige;
 }

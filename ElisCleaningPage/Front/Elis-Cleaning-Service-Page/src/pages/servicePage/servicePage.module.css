@@ -1,6 +1,33 @@
 .container{
-    border: 1px solid seashell;
+    /* border: 1px solid seashell; */
     padding: 5px;
     width: 100vw;
-    height: 100vh;
+    overflow: hidden;
+}
+
+.intro{
+    margin: 2%;
+}
+
+.intro>img{
+    border-radius: 20px;
+}
+
+.service{
+    background-color: beige;
+    overflow: hidden;
+    height: 100%;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+
+.button{
+    padding: 4%;
+    font-size: 20px;
+    border-radius: 20px;
 }
