@@ -1,63 +1,37 @@
-
-.body{
-    /* border: 1px solid bisque; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    max-width: 99vw;
-    width: 99vw;
-}
-
 .container{
-    width: 90%;
-    height: 60%;
-    margin-top: 2%;
-    margin-bottom: 10%;
-    border: 1px solid grey;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.slogan{
-    border: 1px solid grey;
-    margin: 3%;
-    border-radius: 10px;
-    padding: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 150%;
-    font-family: "Indie Flower", cursive ;
+    /* border: 1px solid seashell; */
+    padding: 5px;
+    width: 100vw;
+    overflow: hidden;
+    /* margin-top: 20%; */
 }
 
 
 
-.links{
-    border: 1px solid grey;
-    border-radius: 40px;
-    width: 80%;
-    padding: 2%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.intro>img{
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(82, 87, 92);
 }
 
-.phone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.service{
+    background-color: beige;
+    overflow: hidden;
+    height: 100%;
 }
-.gmail{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+
+.line{
+    border: 0;
+    height: 1px;
+    background-color: rgb(164, 173, 173);
+}
+
+.line2{
+    border: 0;
+    height: 1px;
+    background-color: rgb(164, 173, 173);
+    margin-left: 60px ;
+    margin-right: 60px ;
 }

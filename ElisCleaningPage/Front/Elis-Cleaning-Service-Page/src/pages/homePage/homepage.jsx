@@ -1,42 +1,31 @@
 import styles from "./homepage.module.css"
-import { Form } from "../../components/form/form"
-import telephone from "../../assets/icons/phone-receiver-silhouette.png"
-import email from "../../assets/icons/email.png"
+import NJ from "../../assets/img/4568159-min-1200x834.jpg.webp"
+import Hourglass from "../../assets/icons/hourglass-outline.svg"
+import Diamond from "../../assets/icons/diamond-outline.svg"
+import Logo from "../../assets/img/Elis Cleaning Services (2).svg"
+import { Service } from "../../components/servicesp/service"
+import { Service2 } from "../../components/servicesp/service2"
+import { Contact } from "../../components/buttons/contact"
 import React from 'react'
 
 export const Homepage = () => {
   return (
-    <section className={styles.body}>
-        <p className={styles.slogan}>Enjoy your clean space</p>
-        
+    <section className={styles.container}>
 
-        <div className={styles.container}>
-            <Form/>
+        <hr className={styles.line}></hr>
+        <div className={styles.intro}>
+        <img src={Logo} alt="Logo" width={"100%"} height={""} />
         </div>
-        
-        <p>Otros metodos</p>
-
-        <div className={styles.links}>
-
-          <div className={styles.phone}>
-          <img src={telephone} alt="Phone icon" width={"20px"} height={"20px"}/>
-            
-            <p>
-
-            908-251-3398
-            </p>
-            </div>
-          <br></br>
-        
-          <div className={styles.gmail}>
-          <img src={email} alt="Phone icon" width={"20px"} height={"20px"}/>
-            
-            <p>
-              EliCleans@gmail.com
-              </p>
-            </div>
-        
+        <hr className={styles.line}></hr>
+        <div className={styles.service}>
         </div>
+        <Service text="Especializados en limpieza tanto de locales como de viviendas." img={NJ} className={styles.square1}/>
+        <hr className={styles.line2}></hr>
+        <Service2 text="Con los productos mas competentes para una impecabilidad asegurada" img={Diamond} className={styles.square2}/>
+        <hr className={styles.line2}></hr>
+        <Service text="Disponibilidad horaria completa" img={Hourglass} className={styles.square3}/>
+        <Contact/>
+
     </section>
   )
 }
